@@ -11,6 +11,7 @@ function ssa_rc = ssa_decomposition(X, window, ssa_no)
 %     window: Lag window for building covariance matrix.
 %     ssa_no: Number of SSA reconstructed components(RC) to return.
 %             (returns the RCs associated with the largest eigenvalues in a descending order)  
+%             If not specified, uses deafault value of 5.
 % Output value:
 %     ssa_rc: The first five Reconstructed Components(RC) in a matrix ssa_rc
 %             of size 'ssa_no' by 'PBU Time Series length'. First row of ssa_rc contains first RC,
