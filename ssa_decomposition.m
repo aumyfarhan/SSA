@@ -1,7 +1,8 @@
 function ssa_rc = ssa_decomposition(X, window, ssa_no)
-% SSA_DECOMPOSITION - Performs SSA decomposition on the NaN removed, interpolated
-%                     Signal derivative and returns the first "ssa_no" number of
-%                     Reconstructed Components(RC) in a matrix
+% SSA_DECOMPOSITION - Performs SSA decomposition on 'X' using
+%                     embedding dimension = 'window', 
+%                     and returns the first "ssa_no" number of
+%                     Reconstructed Components(RC) in a matrix.
 % 
 % Usage:  ssa_rc=ssa_decomposition(X, window, ssa_no)
 %
