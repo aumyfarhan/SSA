@@ -1,17 +1,18 @@
-function ssa_rc=ssa_decomposition(X,window)
+function ssa_rc = ssa_decomposition(X, window, ssa_no)
 % SSA_DECOMPOSITION - Performs SSA decomposition on the NaN removed, interpolated
 %                     Signal derivative and returns the first five
 %                     Reconstructed Components(RC) in a matrix
 % 
-% Usage:  ssa_rc=ssa_decomposition(X,window)
+% Usage:  ssa_rc=ssa_decomposition(X, window, ssa_no)
 %
 % Input arguments:   
 %     X: Signal derivative values.
 %     window: Lag window for building covariance matrix.
 % Output value:
 %     ssa_rc: The first five Reconstructed Components(RC) in a matrix ssa_rc
-%             of size 5 by 'PBU Time Series length'. First row of ssa_rc contains first RC,
-%             second row contains second RC and so on.       
+%             of size 'ssa_no' by 'PBU Time Series length'. First row of ssa_rc contains first RC,
+%             second row contains second RC and so on.
+%     ssa_no: Number of SSA reconstructed components to return (from begining).
 % Other functions required:
 %      None
 %
@@ -20,7 +21,10 @@ function ssa_rc=ssa_decomposition(X,window)
 
 N = length(X);   % length of time series
 
-
+if ~exist('ssa_no','var')
+    ssa_no = 5;
+end
+    
 % if the window size is greater than the time series length
 % then reduce window length
 
@@ -54,9 +58,4 @@ for i=1:window
   end
 end
 
-ssa_rc=[];
-ssa_rc(1,:)=reconstructed_component(:,1);
-ssa_rc(2,:)=reconstructed_component(:,2);
-ssa_rc(3,:)=reconstructed_component(:,3);
-ssa_rc(4,:)=reconstructed_component(:,4);
-ssa_rc(5,:)=reconstructed_component(:,5);
+ssa_rc = reconstructed_component(:,1:ssa_no)';
