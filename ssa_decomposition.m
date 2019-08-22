@@ -1,6 +1,6 @@
 function ssa_rc = ssa_decomposition(X, window, ssa_no)
 % SSA_DECOMPOSITION - Performs SSA decomposition on the NaN removed, interpolated
-%                     Signal derivative and returns the first five
+%                     Signal derivative and returns the first "ssa_no" number of
 %                     Reconstructed Components(RC) in a matrix
 % 
 % Usage:  ssa_rc=ssa_decomposition(X, window, ssa_no)
@@ -8,11 +8,12 @@ function ssa_rc = ssa_decomposition(X, window, ssa_no)
 % Input arguments:   
 %     X: Signal derivative values.
 %     window: Lag window for building covariance matrix.
+%     ssa_no: Number of SSA reconstructed components(RC) to return.
+%             (returns the RCs associated with the largest eigenvalues in a descending order)  
 % Output value:
 %     ssa_rc: The first five Reconstructed Components(RC) in a matrix ssa_rc
 %             of size 'ssa_no' by 'PBU Time Series length'. First row of ssa_rc contains first RC,
 %             second row contains second RC and so on.
-%     ssa_no: Number of SSA reconstructed components to return (from begining).
 % Other functions required:
 %      None
 %
