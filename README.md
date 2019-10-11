@@ -10,11 +10,11 @@ Please go through the user manual and developer's guide files in the Documentati
 [![Short promotional Video for SIG](https://img.youtube.com/vi/-2_L3QO46Aw/0.jpg)](https://www.youtube.com/watch?v=-2_L3QO46Aw)
 
 ## Authors
-Farhan Asif Chowdhury
+Farhan Asif Chowdhury <br/>
 Email: aumyfarhan@gmail.com
 
 ## Reference
-If you use or find this source code useful please cite the following work:
+If you use or find this source code useful, please cite the following work:
 > 	Farhan Asif Chowdhury, Satomi Suzuki, Abdullah Mueen. _Structured Noise Detection: Application on Well Test Pressure Derivative Data_. KDD 2019.
 
 BibTeX:
