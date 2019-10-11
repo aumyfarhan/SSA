@@ -15,6 +15,9 @@ Email: aumyfarhan@gmail.com
 
 ## Reference
 If you use or find this source code useful please cite the following work:
+> 	Farhan Asif Chowdhury, Satomi Suzuki, Abdullah Mueen. _Structured Noise Detection: Application on Well Test Pressure Derivative Data_. KDD 2019.
+
+BibTeX:
 
       @inproceedings{chowdhury2019structured,
         title={Structured Noise Detection: Application on Well Test Pressure Derivative Data},
