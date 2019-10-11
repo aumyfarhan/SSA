@@ -2,12 +2,16 @@
 
 ## About
 
+This repository contain the source code for reproducing the results from the paper "Structured Noise Detection: An Application on Well Test Pressure Derivative Data" published in SIGKDD 2019 in Applied Data Science track (see https://dl.acm.org/citation.cfm?id=3330661).
 
+Please go through the user manual and developer's guide files in the Documentation folder for more information.
 
-
-Please go through the user manual and developer guide files in the Documentation folder for more information.
 ## Promotional Video
 [![Short promotional Video for SIG](https://img.youtube.com/vi/-2_L3QO46Aw/0.jpg)](https://www.youtube.com/watch?v=-2_L3QO46Aw)
+
+## Authors
+Farhan Asif Chowdhury
+Email: aumyfarhan@gmail.com
 
 ## Reference
 If you use or find this source code useful please cite the following work:
