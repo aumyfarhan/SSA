@@ -6,6 +6,8 @@
 
 
 Please go through the user manual and developer guide files in the Documentation folder for more information.
+## Promotional Video
+[![Short promotional Video for SIG](https://img.youtube.com/vi/-2_L3QO46Aw/0.jpg)](https://www.youtube.com/watch?v=-2_L3QO46Aw)
 
 ## Reference
 If you use or find this source code useful please cite the following work:
